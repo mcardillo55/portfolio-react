@@ -5,7 +5,7 @@ const ProjectsSection = () => {
     <div id="projects">
         <div id="projects">
             <h2>Projects</h2>
-            <div class="project">
+            <div className="project">
                 <h4><a href="https://github.com/mcardillo55/gdax-trader">gdax-trader</a> - GDAX Cryptocurrency Trading Platform/Bot (Python) - 2017-2018</h4>
                 <ul>
                     <li>Supports Bitcoin, Ether and Litecoin</li>
@@ -29,7 +29,7 @@ const ProjectsSection = () => {
                     <li>Updated app to work around Facebook API restrictions that limited third-party access to friend's list data by parsing an uploaded version of the user's "Friends" page in HTML format</li>
                 </ul>
             </div>
-            <div class="project">
+            <div className="project">
                 <h4>Student Space Programs Laboratory (C/GTK+) - 2010</h4>
                 <ul>
                     <li>Developed front end interface to parse XML messages from a near-space satellite, classify by severity and display in a table format on ground station computers</li>

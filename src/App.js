@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Route, NavLink } from 'react-router-dom';
 import './App.css';
 import NameHeader from './components/NameHeader';
 import CircleButtons from './components/CircleButtons';
@@ -11,14 +11,14 @@ class App extends Component {
   render() {
     return (
     <div>
-      <div class="container" id="page-wrap">
-        <Link to='/'>
+      <div className="container" id="page-wrap">
+        <NavLink activeStyle={{color: '#00687C'}} to='/'>
           <NameHeader />
-        </Link>
+        </NavLink>
         <CircleButtons />
         <Route path='/(experience|projects)' render={props=><hr/>} />
-        <div class="container" >
-          <div class="col-md-1-offset col-md-10 col-md-offset-1" id="content">
+        <div className="container" >
+          <div className="col-md-1-offset col-md-10 col-md-offset-1" id="content">
             <Route path='/experience' component={ExperienceSection} />
             <Route path='/projects' component={ProjectsSection} />
           </div>

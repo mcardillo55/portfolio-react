@@ -43,8 +43,24 @@ footer {
   vertical-align: middle;
 }
 
-.circle:hover {
-    color: #fff;
+a {
+  color: #00687C;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+a.circle-link-active {
+  color: #fff;
+  text-decoration: none;
 }
 
 .col-center {
