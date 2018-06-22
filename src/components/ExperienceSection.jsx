@@ -39,27 +39,39 @@ const ExperienceSection = () => {
 
         <div id="skills">
             <h2>Technical Skills</h2>
-            <h4>Programming Languages</h4>
-            <ul>
-                <li>Python, C, C++, Java</li>
-                <li>HTML, JavaScript, CSS</li>
-            </ul>
-            <h4>Web Frameworks</h4>
-            <ul>
-                <li>Flask</li>
-                <li>Django</li>
-            </ul>
-            <h4>Databases</h4>
-            <ul>
-                <li>MySQL</li>
-                <li>SQLite</li>
-            </ul>
-            <h4>Operating Systems</h4>
-            <ul>
-                <li>GNU/Linux</li>
-                <li>Mac OS X</li>
-                <li>Windows</li>
-            </ul>
+            <div className="row">
+                <div className="col-sm-6">
+                    <h4>Programming Languages</h4>
+                    <ul>
+                        <li>Python, C, C++, Java</li>
+                        <li>HTML, JavaScript, CSS</li>
+                    </ul>
+                </div>
+                <div className="col-sm-6">
+                    <h4>Web Frameworks</h4>
+                    <ul>
+                        <li>Flask</li>
+                        <li>Django</li>
+                    </ul>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-sm-6">
+                    <h4>Databases</h4>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>SQLite</li>
+                    </ul>
+                </div>
+                <div className="col-sm-6">
+                    <h4>Operating Systems</h4>
+                    <ul>
+                        <li>GNU/Linux</li>
+                        <li>Mac OS X</li>
+                        <li>Windows</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
   )
