@@ -3,8 +3,7 @@ h2, h3, h4, h5 {
 }
 
 h1 {
-    font-family: "Josefin Sans";
-    font-size: 60px;
+    font-size: 70px;
     font-weight: bold;
 }
 
@@ -12,12 +11,13 @@ html {
     overflow-y: scroll;
     min-height: 100%;
     position: relative;
+    font-family: "Roboto", sans-serif ;
 }
 
 body {
     margin-bottom: 60px;
     color: #00687C;
-    font-family: "Open Sans";
+
     font-size: 16px;
 }
 
@@ -34,7 +34,7 @@ footer {
 }
 
 .circle {
-  background: #00C3E6;
+  background: #77ddef;
   border-radius: 50%;
   font-weight: bold;
   height: 175px;
