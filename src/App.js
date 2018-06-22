@@ -16,11 +16,17 @@ class App extends Component {
           <NameHeader />
         </NavLink>
         <CircleButtons />
-        <Route path='/(experience|projects)' render={props=><hr/>} />
-        <div className="container" >
-          <div className="col-md-1-offset col-md-10 col-md-offset-1" id="content">
-            <Route path='/experience' component={ExperienceSection} />
-            <Route path='/projects' component={ProjectsSection} />
+        <div className="row">
+          <div className="col-md-12">
+            <Route path='/(experience|projects)' render={props=><hr/>} />
+          </div>
+        </div>
+        <div className="row" >
+          <div className="container">
+            <div className="col-md-1-offset col-md-10 col-md-offset-1" id="content">
+              <Route path='/experience' component={ExperienceSection} />
+              <Route path='/projects' component={ProjectsSection} />
+            </div>
           </div>
         </div>
       </div>
