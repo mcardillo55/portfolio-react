@@ -64,7 +64,9 @@ footer {
     padding-bottom: 30px;
 }
 
-#social-media a{
+#social-media a,
+#social-media i{
     color: #777;
+    margin-right: 3px;
     text-decoration: none;
 }
