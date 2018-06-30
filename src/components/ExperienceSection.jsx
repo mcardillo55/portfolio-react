@@ -21,14 +21,6 @@ const ExperienceSection = () => {
                     <li>Wrote several scripts in Perl to perform common source code management tasks, such as counting the total number of lines in a codebase, or determining which ClearCase component contained a given file</li>
                 </ul>
             </div>
-            <div className="job">
-                <h3>Netcarrier Telecommunications</h3>
-                <h5>Lansdale, PA</h5>
-                <h4 className="job-title">Technical Support Representative - June 2006 to January 2010</h4>
-                <ul className="job-roles">
-                    <li>Performed first level troubleshooting with voice and data T1 service customers</li>
-                </ul>
-            </div>
         </div>
 
         <div id="education">
