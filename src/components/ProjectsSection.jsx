@@ -16,12 +16,16 @@ const ProjectsSection = () => {
                     <li>Created simple curses interface to view realtime status of bot in console</li>
                     <li>Made contributions back to gdax-python (<a href="https://github.com/danpaquin/gdax-python">https://github.com/danpaquin/gdax-python</a>)</li>
                 </ul>
+            </div>
+            <div className="project">
                 <h4><a href="https://github.com/mcardillo55/soundcloud-dj">soundcloud-dj</a> - YouTube/SoundCloud Hybrid Playlists (Python/Flask/AngularJS) - 2016</h4>
                 <ul>
                     <li>Used Facebook Graph API to search for SoundCloud and YouTube links in groups</li>
                     <li>Created hybrid playlists of both YouTube and SoundCloud songs</li>
                     <li>Utilized YouTube/SoundCloud JavaScript APIs to continuously play songs</li>
                 </ul>
+            </div>
+            <div className="project">
                 <h4><a href="https://github.com/mcardillo55/unfriended-flask">unfriended</a> - Facebook Un-Friending Detector (Python/Flask) - 2015</h4>
                 <ul>
                     <li>Used Facebook API to obtain user's friend data</li>

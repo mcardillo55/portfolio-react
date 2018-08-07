@@ -91,6 +91,11 @@ a.circle-link-active {
     cursor: pointer;
 }
 
+.project {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 #footer-container {
     margin-top: 15px;
     font-size: 15px;
