@@ -34,7 +34,7 @@ footer {
 }
 
 .circle {
-  background: #77ddef;
+  background: #4CE2FF;
   border-radius: 50%;
   font-weight: bold;
   height: 175px;
@@ -44,6 +44,30 @@ footer {
 }
 
 a {
+  color: #00ABCC;
+  outline: 0;
+  text-decoration: none;
+}
+
+a#name-link{
+  color: #00687C;
+  outline: 0;
+  text-decoration: none;
+}
+
+a:hover#name-link {
+  color: #4CE2FF;
+  outline: 0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4CE2FF;
+  outline: 0;
+  text-decoration: none;
+}
+
+a.circle-link {
   color: #00687C;
   outline: 0;
   text-decoration: none;

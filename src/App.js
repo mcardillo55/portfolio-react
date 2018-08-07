@@ -12,7 +12,7 @@ class App extends Component {
     return (
     <div>
       <div className="container" id="page-wrap">
-        <NavLink activeStyle={{color: '#00687C'}} to='/'>
+        <NavLink id="name-link" to='/'>
           <NameHeader />
         </NavLink>
         <CircleButtons />
