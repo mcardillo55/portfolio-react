@@ -49,12 +49,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: #fff;
-  text-decoration: none;
-}
-
-a:active {
+a:hover.circle-link {
   color: #fff;
   text-decoration: none;
 }
