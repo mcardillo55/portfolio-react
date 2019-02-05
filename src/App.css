@@ -3,8 +3,7 @@ h2, h3, h4, h5 {
 }
 
 h1 {
-    font-size: 70px;
-    font-weight: bold;
+    font-size: 80px;
 }
 
 h4 {
@@ -15,13 +14,12 @@ html {
     overflow-y: scroll;
     min-height: 100%;
     position: relative;
-    font-family: "Roboto", sans-serif ;
 }
 
 body {
     margin-bottom: 60px;
     color: #00687C;
-
+    font-family: "Roboto", sans-serif !important ;
     font-size: 15px;
 }
 
