@@ -41,6 +41,10 @@ footer {
   vertical-align: middle;
 }
 
+.heading-image {
+    margin-top: 15px;
+}
+
 a {
   color: #00ABCC;
   outline: 0;
