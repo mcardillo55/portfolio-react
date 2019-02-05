@@ -6,15 +6,15 @@ const ProjectsSection = () => {
         <div id="projects">
             <h2>Projects</h2>
             <div className="project">
-                <h4><a href="https://github.com/mcardillo55/gdax-trader">gdax-trader</a> - GDAX Cryptocurrency Trading Platform/Bot (Python) - 2017-2018</h4>
+                <h4><a href="https://github.com/mcardillo55/cbpro-trader">cbpro-trader</a> - Automated Cryptocurrency Trader (Python) - 2017-2018</h4>
                 <ul>
-                    <li>Supports Bitcoin, Ether and Litecoin</li>
-                    <li>Collected real-time data from the GDAX cryptocurrency market, using their websocket API (via the <a href="https://github.com/danpaquin/gdax-python">gdax-python</a> library)</li>
+                    <li>Supports all cryptocurrencies available on Coinbase Pro</li>
+                    <li>Collected real-time data from the Coinbase Pro cryptocurrency market, using their websocket API (via the <a href="https://github.com/danpaquin/coinbasepro-python">coinbasepro-python</a> library)</li>
                     <li>Performed real-time technical analysis of cryptocurrency prices, to generate common indicators used in currency trading (using <a href="https://github.com/mrjbq7/ta-lib">ta-lib library</a>)</li>
-                    <li>Automated placing of buy and sell orders based on technical indicators</li>
+                    <li>Placed buy and sell orders, in Python threads, depending on technical indicators</li>
                     <li>Determined, based on current market volatility, whether to use free limit orders or instant market orders</li>
-                    <li>Created simple curses interface to view realtime status of bot in console</li>
-                    <li>Made contributions back to gdax-python (<a href="https://github.com/danpaquin/gdax-python">https://github.com/danpaquin/gdax-python</a>)</li>
+                    <li>Created curses interface to view real-time program data in console</li>
+                    <li>Made contributions back to gdax-python (<a href="https://github.com/danpaquin/coinbasepro-python">https://github.com/danpaquin/coinbasepro-python</a>)</li>
                 </ul>
             </div>
             <div className="project">
