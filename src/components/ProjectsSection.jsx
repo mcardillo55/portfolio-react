@@ -18,7 +18,7 @@ const ProjectsSection = () => {
                 </ul>
             </div>
             <div className="project">
-                <h4><a href="https://github.com/mcardillo55/soundcloud-dj">soundcloud-dj</a> - YouTube/SoundCloud Hybrid Playlists (Python/Flask/AngularJS) - 2016</h4>
+                <h4><a href="https://github.com/mcardillo55/soundcloud-dj">soundcloud-dj</a> - YouTube/SoundCloud Hybrid Playlists (Python/Flask/AngularJS) - 2014</h4>
                 <ul>
                     <li>Used Facebook Graph API to search for SoundCloud and YouTube links in groups</li>
                     <li>Created hybrid playlists of both YouTube and SoundCloud songs</li>
@@ -26,7 +26,7 @@ const ProjectsSection = () => {
                 </ul>
             </div>
             <div className="project">
-                <h4><a href="https://github.com/mcardillo55/unfriended-flask">unfriended</a> - Facebook Un-Friending Detector (Python/Flask) - 2015</h4>
+                <h4><a href="https://github.com/mcardillo55/unfriended-flask">unfriended</a> - Facebook Un-Friending Detector (Python/Flask) - 2014</h4>
                 <ul>
                     <li>Used Facebook API to obtain user's friend data</li>
                     <li>Utilized Flask framework to store friend data in a MySQL database, which was then retrieved and compared with the user's current friends list on subsequent visits</li>
