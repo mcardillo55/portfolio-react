@@ -20,9 +20,9 @@ const ProjectsSection = () => {
             <div className="project">
                 <h4><a href="https://github.com/mcardillo55/soundcloud-dj">soundcloud-dj</a> - YouTube/SoundCloud Hybrid Playlists (Python/Flask/AngularJS) - 2014</h4>
                 <ul>
-                    <li>Used Facebook Graph API to search for SoundCloud and YouTube links in groups</li>
-                    <li>Created hybrid playlists of both YouTube and SoundCloud songs</li>
-                    <li>Utilized YouTube/SoundCloud JavaScript APIs to continuously play songs</li>
+                    <li>Used Facebook Graph API to search for SoundCloud and YouTube links in FB groups</li>
+                    <li>Stored hybrid playlists of both YouTube and SoundCloud songs in an SQLite database</li>
+                    <li>Utilized AngularJS and YouTube/SoundCloud JavaScript Player APIs to dynamically play songs in their corresponding player, based on the URL</li>
                 </ul>
             </div>
             <div className="project">
