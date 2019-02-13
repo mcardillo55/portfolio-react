@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 const NameHeader = () => {
     return(
       <Row>
-          <Col id="name" className="page-header text-center" md={12}>
+          <Col id="name" className="pb-2 mt-4 mb-2 border-bottom text-center" md={12}>
               <h1>Mike Cardillo</h1>
           </Col>
       </Row>
