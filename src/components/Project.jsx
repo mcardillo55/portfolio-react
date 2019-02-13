@@ -12,8 +12,9 @@ const Project = (props) => {
     }
     return(
         <div className="project">
-            <h4>{title}{title && " - "}{props.description} ({props.stack}) - {props.years}</h4>
+            <h6>{title}{title && " - "}{props.description} ({props.stack}) - {props.years}</h6>
             <ul>
+
                 {props.tasks.map(function(task) {
                     return <li dangerouslySetInnerHTML={{__html: task}} />
                 })}

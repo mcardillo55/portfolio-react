@@ -5,7 +5,7 @@ const ProjectsSection = () => {
   return(
     <div id="projects">
         <div id="projects">
-            <h2>Projects</h2>
+            <h3>Projects</h3>
             <Project title="cbpro-trader" 
                      link="https://github.com/mcardillo55/cbpro-trader"
                      description="Automated Cryptocurrency Trader"
