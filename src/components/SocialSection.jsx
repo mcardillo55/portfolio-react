@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Col from 'react-bootstrap/Col';
 
 class SocialSection extends Component {
     constructor() {
@@ -16,7 +17,7 @@ class SocialSection extends Component {
     }
     render() {
         return (
-            <div className="col-md-offset-4 col-md-4" id="social-media">
+            <Col id="social-media" md={{span: 4, offset: 4}}>
                 <a href="https://www.facebook.com/mcardillo55">
                     <i className="fa fa-facebook-square fa-lg"></i>
                 </a>
@@ -28,7 +29,7 @@ class SocialSection extends Component {
                 </a>
                 <i className="fa fa-envelope fa-lg" onClick={this.toggleEmail}></i>
                 {this.state.email_visible ? <span id="email-address">mike@mjcardillo.com</span> : null}
-            </div>
+            </Col>
         )
     }
 };

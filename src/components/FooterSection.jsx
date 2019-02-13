@@ -1,15 +1,20 @@
 import React from 'react';
 import SocialSection from './SocialSection';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
 
 const FooterSection = () => {
   return(  
     <footer className="footer" id="footer">
-        <div className="container text-center text-muted" id="footer-container">
-            <div className="col-md-4">
+        <Container id="footer-container" className="text-center text-muted">
+          <Row>
+            <Col md={4}>
                 San Francisco, California &#8226; {new Date().getFullYear()}
-            </div>
+            </Col>
             <SocialSection />
-        </div>
+          </Row>
+        </Container>
     </footer>
   )
 };

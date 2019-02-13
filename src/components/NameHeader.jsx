@@ -1,12 +1,14 @@
 import React from 'react';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const NameHeader = () => {
     return(
-      <div className="row">
-          <div className="page-header col-md-12 text-center" id="name">
+      <Row>
+          <Col id="name" className="page-header text-center" md={12}>
               <h1>Mike Cardillo</h1>
-          </div>
-      </div>
+          </Col>
+      </Row>
     )
 };
 

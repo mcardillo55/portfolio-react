@@ -1,6 +1,9 @@
 import React from 'react';
 import CiscoLogo from '../images/cisco_logo.png';
 import PSULogo from '../images/psu_logo.png';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image';
 
 const ExperienceSection = () => {
   return(
@@ -8,15 +11,15 @@ const ExperienceSection = () => {
         <div id="professional">
             <h2>Professional</h2>
             <div className="job">
-                <div className="row">
-                    <div className="col-xs-2">
-                        <img className="img-responsive heading-image" src={CiscoLogo} alt="Cisco Logo"/>
-                    </div>
-                    <div className="col-xs-10">
+                <Row>
+                    <Col xs={2}>
+                        <Image className="heading-image" src={CiscoLogo} alt="Cisco Logo" fluid/>
+                    </Col>
+                    <Col xs={10}>
                         <h3>Cisco Systems</h3>
                         <h5>San Jose, CA</h5>
-                    </div>
-                </div>
+                    </Col>
+                </Row>
                     <h4 className="job-title">Software Engineer - Kernel - September 2011 to September 2016</h4>
                     <ul className="job-roles">
                         <li>Implemented prctl system calls to allow userspace code direct access to system page data, greatly reducing the amount of CPU context switching required for common tasks</li>
@@ -34,52 +37,52 @@ const ExperienceSection = () => {
 
         <div id="education">
             <h2>Education</h2>
-            <div className="row">
-                <div className="col-xs-2">
-                    <img className="img-responsive heading-image" src={PSULogo} alt="Penn State Logo"/>
-                </div>
-                <div className="col-xs-7">
+            <Row>
+                <Col xs={2}>
+                    <Image className="heading-image" src={PSULogo} alt="Penn State Logo" fluid/>
+                </Col>
+                <Col xs={7}>
                     <h4>Pennsylvania State University</h4>
                     <h5>Bachelor of Science in Computer Engineering, June 2011</h5>
-                </div>
-            </div>
+                </Col>
+            </Row>
         </div>
 
         <div id="skills">
             <h2>Technical Skills</h2>
-            <div className="row">
-                <div className="col-sm-6">
+            <Row>
+                <Col sm={6}>
                     <h4>Programming Languages</h4>
                     <ul>
                         <li>Python, C, C++, Java</li>
                         <li>HTML, JavaScript, CSS</li>
                     </ul>
-                </div>
-                <div className="col-sm-6">
+                </Col>
+                <Col sm={6}>
                     <h4>Web Frameworks</h4>
                     <ul>
                         <li>Flask</li>
                         <li>Django</li>
                     </ul>
-                </div>
-            </div>
-            <div className="row">
-                <div className="col-sm-6">
+                </Col>
+            </Row>
+            <Row>
+                <Col sm={6}>
                     <h4>Databases</h4>
                     <ul>
                         <li>MySQL</li>
                         <li>SQLite</li>
                     </ul>
-                </div>
-                <div className="col-sm-6">
+                </Col>
+                <Col sm={6}>
                     <h4>Operating Systems</h4>
                     <ul>
                         <li>GNU/Linux</li>
                         <li>Mac OS X</li>
                         <li>Windows</li>
                     </ul>
-                </div>
-            </div>
+                </Col>
+            </Row>
         </div>
     </div>
   )
