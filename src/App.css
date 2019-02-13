@@ -65,12 +65,12 @@ a.circle-link {
 }
 
 a:hover.circle-link {
-  color: #fff;
+  color: #00ABCC;
   text-decoration: none;
 }
 
 a.circle-link-active {
-  color: #fff;
+  color: #00ABCC;
   text-decoration: none;
 }
 
@@ -85,6 +85,10 @@ a.circle-link-active {
 .project {
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.small-nav {
+  font-size: 30px;
 }
 
 #footer-container {
