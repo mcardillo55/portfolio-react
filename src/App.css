@@ -3,7 +3,7 @@ h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 80px;
+  font-size: 80px;
 }
 
 html {
@@ -16,7 +16,6 @@ body {
     margin-bottom: 60px;
     color: #00687C;
     font-family: "Roboto", sans-serif !important ;
-    font-size: 15px;
 }
 
 footer {
@@ -90,7 +89,6 @@ a.circle-link-active {
 
 #footer-container {
     margin-top: 15px;
-    font-size: 15px;
 }
 
 #page-wrap {
