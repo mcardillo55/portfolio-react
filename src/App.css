@@ -26,6 +26,11 @@ footer {
     width: 100%;
 }
 
+.badge-primary {
+  color: #00687C;
+  background-color: #4CE2FF;
+}
+
 .container {
     max-width: 992px;
 }
