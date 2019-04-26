@@ -110,3 +110,13 @@ a.circle-link-active {
     margin-right: 3px;
     text-decoration: none;
 }
+
+#return-to-top {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #4CE2FF;
+  color: #00687C;
+  border: none;
+  text-decoration: none;
+}

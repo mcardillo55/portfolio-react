@@ -6,6 +6,7 @@ import CircleButtons from './components/CircleButtons';
 import ExperienceSection from './components/ExperienceSection';
 import ProjectsSection from './components/ProjectsSection';
 import FooterSection from './components/FooterSection';
+import ReturnToTopButton from './components/ReturnToTopButton';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -15,11 +16,19 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      displayContent: false
+      displayContent: false,
+      yOffset: 0
     }
 
     this.handleCircleClick = this.handleCircleClick.bind(this);
     this.handleNameClick = this.handleNameClick.bind(this);
+  }
+  componentDidMount() {
+    window.addEventListener('scroll', () => {
+      this.setState({
+        yOffset: window.pageYOffset
+      })
+    })
   }
   handleCircleClick() {
     this.setState({
@@ -43,7 +52,7 @@ class App extends Component {
           <NameHeader />
         </a>
         <CircleButtons onClick={this.handleCircleClick}/>
-        <div id="content" style={{display:this.state.displayContent ? "block" : "none"}}>
+        <div id="content">
           <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
             <Row>
               <Col md={12}>
@@ -70,6 +79,7 @@ class App extends Component {
           </ScrollAnimation>
         </div>
       </Container>
+      <ReturnToTopButton yOffset={this.state.yOffset} />
       <FooterSection />
     </div>
     );
