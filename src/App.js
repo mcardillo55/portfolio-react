@@ -74,8 +74,8 @@ class App extends Component {
                 <hr/>
               </Col>
             </Row>
-            <Row>
-                <Col id="projects" md={{span: 10, offset: 1}}>
+              <Row id="projects">
+                  <Col md={{span: 10, offset: 1}}>
                   <ProjectsSection />
                 </Col>
             </Row>
