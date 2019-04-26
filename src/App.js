@@ -68,6 +68,7 @@ class App extends Component {
             </Row>
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+            <div className="pb-5" >
             <Row>
               <Col md={12}>
                 <hr/>
@@ -78,6 +79,7 @@ class App extends Component {
                   <ProjectsSection />
                 </Col>
             </Row>
+            </div>
           </ScrollAnimation>
         </div>
       </Container>
