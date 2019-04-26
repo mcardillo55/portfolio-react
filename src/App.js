@@ -9,29 +9,66 @@ import FooterSection from './components/FooterSection';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      displayContent: false
+    }
+
+    this.handleCircleClick = this.handleCircleClick.bind(this);
+    this.handleNameClick = this.handleNameClick.bind(this);
+  }
+  handleCircleClick() {
+    this.setState({
+      displayContent: true
+    })
+  }
+  handleNameClick() {
+    setTimeout(() => 
+    {
+        this.setState({
+          displayContent: false
+        })
+    }, 1000)
+
+  }
   render() {
     return (
     <div>
       <Container>
-        <NavLink id="name-link" to='/'>
+        <a href="#" id="name-link" onClick={this.handleNameClick}>
           <NameHeader />
-        </NavLink>
-        <CircleButtons />
-        <Row>
-          <Col md={12}>
-            <Route path='/(experience|projects)' render={props=><hr/>} />
-          </Col>
-        </Row>
-        <Row>
-          <Container>
-            <Col id="content" md={{span: 10, offset: 1}}>
-              <Route path='/experience' component={ExperienceSection} />
-              <Route path='/projects' component={ProjectsSection} />
-            </Col>
-          </Container>
-        </Row>
+        </a>
+        <CircleButtons onClick={this.handleCircleClick}/>
+        <div id="content" style={{display:this.state.displayContent ? "block" : "none"}}>
+          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+            <Row>
+              <Col md={12}>
+                <hr/>
+              </Col>
+            </Row>
+            <Row>
+                <Col id="experience" md={{span: 10, offset: 1}}>
+                  <ExperienceSection />
+                </Col>
+            </Row>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+            <Row>
+              <Col md={12}>
+                <hr/>
+              </Col>
+            </Row>
+            <Row>
+                <Col id="projects" md={{span: 10, offset: 1}}>
+                  <ProjectsSection />
+                </Col>
+            </Row>
+          </ScrollAnimation>
+        </div>
       </Container>
       <FooterSection />
     </div>
