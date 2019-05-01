@@ -7,7 +7,7 @@ const ReturnToTopButton = (props) => {
                 className="btn btn-primary"
                 id="return-to-top"
                 style={{display: props.yOffset > 50 ? "block" : "none"}}
-                onClick={scroll.scrollToTop}>
+                onClick={() => {scroll.scrollToTop({duration: 200})}}>
                 <i className="fa fa-chevron-up"></i>
         </button>
     );
