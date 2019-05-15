@@ -1,4 +1,5 @@
 import React from 'react';
+import ListGroup from 'react-bootstrap/ListGroup';
 import CiscoLogo from '../images/cisco_logo.png';
 import PSULogo from '../images/psu_logo.png';
 import Row from 'react-bootstrap/Row';
@@ -52,40 +53,40 @@ const ExperienceSection = () => {
             <h3>Technical Skills</h3>
             <Row>
                 <Col sm={6}>
-                    <h6>Programming Languages</h6>
-                    <ul>
-                        <li>Python, JavaScript/Node.JS</li>
-                        <li>C, C++</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
+                    <h6 className="my-3">Programming Languages</h6>
+                    <ListGroup>
+                        <ListGroup.Item>Python, JavaScript/Node.JS</ListGroup.Item>
+                        <ListGroup.Item>C, C++</ListGroup.Item>
+                        <ListGroup.Item>HTML</ListGroup.Item>
+                        <ListGroup.Item>CSS</ListGroup.Item>
+                    </ListGroup>
                 </Col>
                 <Col sm={6}>
-                    <h6>Web Frameworks</h6>
-                    <ul>
-                        <li>Flask</li>
-                        <li>Django</li>
-                        <li>Bootstrap</li>
-                        <li>Express</li>
-                    </ul>
+                    <h6 className="my-3">Web Frameworks</h6>
+                    <ListGroup>
+                        <ListGroup.Item>Flask</ListGroup.Item>
+                        <ListGroup.Item>Django</ListGroup.Item>
+                        <ListGroup.Item>Bootstrap</ListGroup.Item>
+                        <ListGroup.Item>Express</ListGroup.Item>
+                    </ListGroup>
                 </Col>
             </Row>
             <Row>
                 <Col sm={6}>
-                    <h6>Databases</h6>
-                    <ul>
-                        <li>MongoDB</li>
-                        <li>MySQL</li>
-                        <li>SQLite</li>
-                    </ul>
+                    <h6 className="my-3">Databases</h6>
+                    <ListGroup>
+                        <ListGroup.Item>MongoDB</ListGroup.Item>
+                        <ListGroup.Item>MySQL</ListGroup.Item>
+                        <ListGroup.Item>SQLite</ListGroup.Item>
+                    </ListGroup>
                 </Col>
                 <Col sm={6}>
-                    <h6>Operating Systems</h6>
-                    <ul>
-                        <li>GNU/Linux</li>
-                        <li>Mac OS X</li>
-                        <li>Windows</li>
-                    </ul>
+                    <h6 className="my-3">Operating Systems</h6>
+                    <ListGroup>
+                        <ListGroup.Item>GNU/Linux</ListGroup.Item>
+                        <ListGroup.Item>Mac OS X</ListGroup.Item>
+                        <ListGroup.Item>Windows</ListGroup.Item>
+                    </ListGroup>
                 </Col>
             </Row>
         </div>
