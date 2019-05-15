@@ -2,21 +2,13 @@ import React from 'react';
 import Badge from 'react-bootstrap/Badge'
 import Card from 'react-bootstrap/Card'
 import ListGroup from 'react-bootstrap/ListGroup'
+import Button from 'react-bootstrap/Button'
 
 const ProjectCard = (props) => {
-    let title;
-    if (props.title) {
-            if (props.link) {
-                title = <a href={props.link}>{props.title}</a>;
-            } else {
-                title = props.title
-            }
-                    
-    }
     return(
         <Card>
             <Card.Body>
-                <Card.Title>{title}</Card.Title>
+                <Card.Title>{props.title}</Card.Title>
                 <div>
                     {props.stack.map(function(technology) {
                         return <Badge pill className="mr-1" variant="primary">{technology}</Badge>
@@ -28,6 +20,10 @@ const ProjectCard = (props) => {
                     return <ListGroup.Item dangerouslySetInnerHTML={{__html: task}} />
                 })}
             </ListGroup>
+            <Card.Body className="text-center">
+                <Button className="mx-3" href={props.source_link} disabled={!props.source_link}>Source</Button>
+                <Button className="mx-3" href={props.demo_link} disabled={!props.demo_link}>Demo</Button>
+            </Card.Body>
         </Card>
     )
 };
