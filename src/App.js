@@ -48,14 +48,14 @@ class App extends Component {
     return (
     <div>
       <Container>
-        <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+        <ScrollAnimation animateIn="fadeIn" animateOnce="True">
           <a href="#" id="name-link" onClick={this.handleNameClick}>
             <NameHeader />
           </a>
           <CircleButtons onClick={this.handleCircleClick}/>
         </ScrollAnimation>
         <div id="content">
-          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+          <ScrollAnimation animateIn="fadeIn" animateOnce="True">
             <Row>
               <Col md={12}>
                 <hr/>
@@ -67,7 +67,7 @@ class App extends Component {
                 </Col>
             </Row>
           </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+          <ScrollAnimation animateIn="fadeIn" animateOnce="True">
             <div className="pb-5" >
               <Row>
                 <Col md={12}>
