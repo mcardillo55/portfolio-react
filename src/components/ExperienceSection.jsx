@@ -54,8 +54,10 @@ const ExperienceSection = () => {
                 <Col sm={6}>
                     <h6>Programming Languages</h6>
                     <ul>
-                        <li>Python, C, C++, Java</li>
-                        <li>HTML, JavaScript, CSS</li>
+                        <li>Python, JavaScript/Node.JS</li>
+                        <li>C, C++</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
                     </ul>
                 </Col>
                 <Col sm={6}>
@@ -63,6 +65,8 @@ const ExperienceSection = () => {
                     <ul>
                         <li>Flask</li>
                         <li>Django</li>
+                        <li>Bootstrap</li>
+                        <li>Express</li>
                     </ul>
                 </Col>
             </Row>
@@ -70,6 +74,7 @@ const ExperienceSection = () => {
                 <Col sm={6}>
                     <h6>Databases</h6>
                     <ul>
+                        <li>MongoDB</li>
                         <li>MySQL</li>
                         <li>SQLite</li>
                     </ul>
