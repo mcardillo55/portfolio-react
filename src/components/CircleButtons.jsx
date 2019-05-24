@@ -10,7 +10,7 @@ const CircleButtons = (props) => {
     return (
       <Container>
         <Row>
-          <Col sm={{span: 7, offset:2}} md={{span:8, offset: 2}}>
+          <Col sm={{span: 7, offset:2}} md={{span:10, offset: 1}}>
             <Row id="circle-wrapper" className="text-center">
               <Col xs="12" md="3">
                 <Link className="circle-link" href="#" to="projects" spy={true} smooth={true} hashSpy={true} duration={500} onClick={props.onClick}>
