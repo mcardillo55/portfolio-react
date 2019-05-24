@@ -62,8 +62,8 @@ class App extends Component {
               </Col>
             </Row>
             <Row>
-                <Col id="experience" md={{span: 10, offset: 1}}>
-                  <ExperienceSection />
+                <Col id="projects" md={{span: 10, offset: 1}}>
+                  <ProjectsSection />
                 </Col>
             </Row>
           </ScrollAnimation>
@@ -74,9 +74,9 @@ class App extends Component {
                   <hr/>
                 </Col>
               </Row>
-              <Row id="projects">
+              <Row id="experience">
                   <Col md={{span: 10, offset: 1}}>
-                    <ProjectsSection />
+                    <ExperienceSection />
                   </Col>
               </Row>
             </div>
