@@ -14,14 +14,14 @@ const ExperienceSection = () => {
         <div id="professional">
             <h2>Professional</h2>
                 <Row>
-                    <Col xs={12} md={6}>
+                    <Col className="border rounded" xs={12} md={{span:5, offset: 1}}>
                         <Job image={CiscoLogo}
                              company="Cisco Systems"
                              location="San Jose, CA"
                              title="Software Engineer - Kernel"
                              years="September 2011-September 2016" />
                     </Col>
-                    <Col xs={12} md={6} className="mt-2 mt-md-0">
+                    <Col className="border rounded mt-2 mt-md-0" xs={12} md={{span:5, offset:1}}>
                         <Job image={CiscoLogo}
                              company="Cisco Systems"
                              location="San Jose, CA"
@@ -33,12 +33,17 @@ const ExperienceSection = () => {
         <hr />
         <div id="education">
             <h2>Education</h2>
-                <Col xs={2}>
-                    <Image className="heading-image" src={PSULogo} alt="Penn State Logo" fluid/>
-                </Col>
-                <Col xs={7} className="pl-2">
-                    <h5 className="font-weight-bold">Pennsylvania State University</h5>
-                    <h6>B.S. Computer Engineering, June 2011</h6>
+            <Row>
+                <Col xs={12} md={{span:10, offset: 1}}>
+                    <Row className="no-gutters border rounded">
+                        <Col xs={2}>
+                            <Image className="heading-image" src={PSULogo} alt="Penn State Logo" fluid/>
+                        </Col>
+                        <Col xs={7} className="pl-2">
+                            <h5 className="font-weight-bold">Pennsylvania State University</h5>
+                            <h6>B.S. Computer Engineering, June 2011</h6>
+                        </Col>
+                    </Row>
                 </Col>
             </Row>
         </div>
