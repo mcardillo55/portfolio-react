@@ -14,14 +14,14 @@ const ExperienceSection = () => {
         <div id="professional">
             <h3>Professional</h3>
                 <Row>
-                    <Col xs={6}>
+                    <Col xs={12} md={6}>
                         <Job image={CiscoLogo}
                              company="Cisco Systems"
                              location="San Jose, CA"
                              title="Software Engineer - Kernel"
                              years="September 2011-September 2016" />
                     </Col>
-                    <Col xs={6}>
+                    <Col xs={12} md={6} className="mt-xs-2">
                         <Job image={CiscoLogo}
                              company="Cisco Systems"
                              location="San Jose, CA"
