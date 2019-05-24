@@ -17,26 +17,18 @@ const ProjectsSection = () => {
                         source_link="https://github.com/mcardillo55/soundcloud-dj"
                         demo_link="https://www.shipfamradio.com/"
                         image={SCDJ}
-                        description="YouTube/SoundCloud Hybrid Playlists"
-                        stack={["Python", "Flask", "AngularJS"]}
-                        years="2014" 
-                        tasks={["Searched for SoundCloud and YouTube links in Facebook groups using Graph API",
-                                "Graph API functionality was deprecated. Instead uses hourly cron job to run a PhantomJS script and graph the group data",
-                                "Song data is submitted via POST request to Flask backend and stored in a SQLite database",
-                                "Used AngularJS and YouTube/SoundCloud Frontend APIs to play songs in their corresponding player",
-                                "Playlist is updated live, via Socket.IO, if page is open while songs are added to backend"]}/>
+                        description="Parses a Facebook group with Graph API to locate and store SoundCloud and YouTube URLs. Songs are then displayed in their respective player via an AngularJS Frontend"
+                        stack={["Python", "Flask", "AngularJS", "SQLite", "SocketIO"]}
+                        years="2014" />
               </Col>
               <Col md={6}>
                 <ProjectCard title="unfriended" 
                         source_link="https://github.com/mcardillo55/unfriended-flask"
                         demo_link="https://www.michaeljcardillo.com/unfriended-flask/"
                         image={Unfriended}
-                        description="Facebook Un-Friending Detector"
-                        stack={["Python", "Flask"]}
-                        years="2014" 
-                        tasks={["Grabs user's friend list via Facebook's Graph API (deprecated: now uses user submitted HTML)",
-                                "Utilized Flask framework to store friend data in a MySQL database, which was then retrieved and compared with the user's current friends list on subsequent visits",
-                                "Updated app to work around Facebook API restrictions that limited third-party access to friend's list data by parsing an uploaded version of the user's \"Friends\" page in HTML format"]}/>
+                        description="Obtains and stores user's Facebook Friend List to be compared with lists on subsequent visits to display those who have removed you."
+                        stack={["Python", "Flask", "Bootstrap"]}
+                        years="2014" />
               </Col>
             </Row>
             <Row>
@@ -44,8 +36,8 @@ const ProjectsSection = () => {
                 <ProjectCard title="cbpro-trader" 
                         source_link="https://github.com/mcardillo55/cbpro-trader"
                         image={CBPro}
-                        description="Automated Cryptocurrency Trader"
-                        stack={["Python"]}
+                        description="Automated cryptocurrency trader that uses technical analysis strategies to trade on live tick data provided by Coinbase"
+                        stack={["Python", "Websocket", "NumPy"]}
                         years="2017-2018" 
                         tasks={["Consumes tick data <a href='https://pro.coinbase.com/'>Coinbase Pro</a> websocket",
                                 "Calculates <a href='https://en.wikipedia.org/wiki/Technical_analysis'>technical analysis</a> indicators",

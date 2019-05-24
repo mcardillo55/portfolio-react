@@ -10,20 +10,18 @@ const ProjectCard = (props) => {
             <Card.Img variant="top" src={props.image} />
             <Card.Body>
                 <Card.Title>{props.title}</Card.Title>
-                <div>
+                <Card.Subtitle>
                     {props.stack.map(function(technology) {
                         return <Badge pill className="mr-1" variant="primary">{technology}</Badge>
                     })}
+                </Card.Subtitle>
+                <Card.Text className="mt-1">
+                    {props.description}
+                </Card.Text>
+                <div className="text-center">
+                    <Button className="mx-3" href={props.source_link} disabled={!props.source_link}>Source</Button>
+                    <Button className="mx-3" href={props.demo_link} disabled={!props.demo_link}>Demo</Button>
                 </div>
-            </Card.Body>
-            <ListGroup variant="flush">
-                {props.tasks.map(function(task) {
-                    return <ListGroup.Item dangerouslySetInnerHTML={{__html: task}} />
-                })}
-            </ListGroup>
-            <Card.Body className="text-center">
-                <Button className="mx-3" href={props.source_link} disabled={!props.source_link}>Source</Button>
-                <Button className="mx-3" href={props.demo_link} disabled={!props.demo_link}>Demo</Button>
             </Card.Body>
         </Card>
     )
