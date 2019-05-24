@@ -44,6 +44,7 @@ footer {
 .circle {
   background: #4CE2FF;
   border-radius: 50%;
+  font-family: 'Roboto Slab', serif;
   font-weight: bold;
   height: 160px;
   width: 160px;
