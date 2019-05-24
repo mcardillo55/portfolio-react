@@ -12,7 +12,7 @@ const ExperienceSection = () => {
   return(
     <div id="experience">
         <div id="professional">
-            <h3>Professional</h3>
+            <h2>Professional</h2>
                 <Row>
                     <Col xs={12} md={6}>
                         <Job image={CiscoLogo}
@@ -32,8 +32,7 @@ const ExperienceSection = () => {
         </div>
         <hr />
         <div id="education">
-            <h3>Education</h3>
-            <Row className="no-gutters">
+            <h2>Education</h2>
                 <Col xs={2}>
                     <Image className="heading-image" src={PSULogo} alt="Penn State Logo" fluid/>
                 </Col>
@@ -45,7 +44,7 @@ const ExperienceSection = () => {
         </div>
         <hr />
         <div id="skills">
-            <h3>Technical Skills</h3>
+            <h2>Technical Skills</h2>
             <Row>
                 <Col sm={6}>
                     <h6 className="my-3 font-weight-bold">Programming Languages</h6>

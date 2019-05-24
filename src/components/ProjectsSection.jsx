@@ -11,7 +11,7 @@ const ProjectsSection = () => {
   return(
     <div id="projects">
         <div id="projects">
-            <h3>Projects</h3>
+            <h2>Projects</h2>
             <Row className="mb-3">
               <Col md={6} className="my-2 my-md-0">
                 <ProjectCard title="soundcloud-dj" 
