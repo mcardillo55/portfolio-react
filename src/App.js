@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Route, NavLink } from 'react-router-dom';
 import './App.css';
 import NameHeader from './components/NameHeader';
 import CircleButtons from './components/CircleButtons';
@@ -16,12 +15,8 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      displayContent: false,
       yOffset: 0
     }
-
-    this.handleCircleClick = this.handleCircleClick.bind(this);
-    this.handleNameClick = this.handleNameClick.bind(this);
   }
   componentDidMount() {
     window.addEventListener('scroll', () => {
@@ -30,28 +25,12 @@ class App extends Component {
       })
     })
   }
-  handleCircleClick() {
-    this.setState({
-      displayContent: true
-    })
-  }
-  handleNameClick() {
-    setTimeout(() => 
-    {
-        this.setState({
-          displayContent: false
-        })
-    }, 1000)
-
-  }
   render() {
     return (
     <div>
       <Container>
         <ScrollAnimation animateIn="fadeIn" animateOnce="True">
-          <a href="#" id="name-link" onClick={this.handleNameClick}>
-            <NameHeader />
-          </a>
+          <NameHeader />
           <CircleButtons onClick={this.handleCircleClick}/>
         </ScrollAnimation>
         <div id="content">

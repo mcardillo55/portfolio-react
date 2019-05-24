@@ -1,7 +1,6 @@
 import React from 'react';
 import Badge from 'react-bootstrap/Badge'
 import Card from 'react-bootstrap/Card'
-import ListGroup from 'react-bootstrap/ListGroup'
 import Button from 'react-bootstrap/Button'
 
 const ProjectCard = (props) => {
