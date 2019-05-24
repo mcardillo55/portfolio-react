@@ -21,7 +21,7 @@ const ExperienceSection = () => {
                              title="Software Engineer - Kernel"
                              years="September 2011-September 2016" />
                     </Col>
-                    <Col xs={12} md={6} className="mt-xs-2">
+                    <Col xs={12} md={6} className="mt-2 mt-md-0">
                         <Job image={CiscoLogo}
                              company="Cisco Systems"
                              location="San Jose, CA"

@@ -13,7 +13,7 @@ const ProjectsSection = () => {
         <div id="projects">
             <h3>Projects</h3>
             <Row className="mb-3">
-              <Col md={6}>
+              <Col md={6} className="my-2 my-md-0">
                 <ProjectCard title="soundcloud-dj" 
                         source_link="https://github.com/mcardillo55/soundcloud-dj"
                         demo_link="https://www.shipfamradio.com/"
@@ -22,7 +22,7 @@ const ProjectsSection = () => {
                         stack={["Python", "Flask", "AngularJS", "SQLite", "SocketIO"]}
                         years="2014" />
               </Col>
-              <Col md={6}>
+              <Col md={6} className="my-2 my-md-0">
                 <ProjectCard title="unfriended" 
                         source_link="https://github.com/mcardillo55/unfriended-flask"
                         demo_link="https://www.michaeljcardillo.com/unfriended-flask/"
@@ -33,7 +33,7 @@ const ProjectsSection = () => {
               </Col>
             </Row>
             <Row>
-              <Col md={6}>
+              <Col md={6} className="my-2 my-md-0">
                 <ProjectCard title="cbpro-trader" 
                         source_link="https://github.com/mcardillo55/cbpro-trader"
                         image={CBPro}
@@ -46,7 +46,7 @@ const ProjectsSection = () => {
                                 "Determines whether to place free limit orders or instant market orders, based on market volatility, ",
                                 "Features curses interface to view real-time program data in console"]}/>
               </Col>
-              <Col md={6}>
+              <Col md={6} className="my-2 my-md-0">
                 <ProjectCard title="Student Space Programs Laboratory"
                         stack={["C", "GTK+"]}
                         image={SSPL}
