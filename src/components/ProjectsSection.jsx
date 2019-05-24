@@ -5,6 +5,7 @@ import ProjectCard from './ProjectCard'
 import CBPro from '../images/cbprotrader.png'
 import SCDJ from '../images/soundclouddj.png'
 import Unfriended from '../images/unfriended.png'
+import SSPL from '../images/sspl.png'
 
 const ProjectsSection = () => {
   return(
@@ -48,9 +49,9 @@ const ProjectsSection = () => {
               <Col md={6}>
                 <ProjectCard title="Student Space Programs Laboratory"
                         stack={["C", "GTK+"]}
+                        image={SSPL}
                         years="2010" 
-                        tasks={["Developed front end interface to parse XML messages from a near-space satellite",
-                                "Messages were classified by severity and displayed in table"]}/>
+                        description="Developed front end interface to parse XML messages from a near-space satellite, which were then classified by severity and displayed in table" />
               </Col>
             </Row>
         </div>
