@@ -6,36 +6,30 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import Card from 'react-bootstrap/Card';
+import Job from './Job';
 
 const ExperienceSection = () => {
   return(
     <div id="experience">
         <div id="professional">
             <h3>Professional</h3>
-            <div className="job">
                 <Row>
-                    <Col xs={2}>
-                        <Image className="heading-image" src={CiscoLogo} alt="Cisco Logo" fluid/>
+                    <Col xs={6}>
+                        <Job image={CiscoLogo}
+                             company="Cisco Systems"
+                             location="San Jose, CA"
+                             title="Software Engineer - Kernel"
+                             years="September 2011-September 2016" />
                     </Col>
-                    <Col xs={10}>
-                        <h4>Cisco Systems</h4>
-                        <h5>San Jose, CA</h5>
+                    <Col xs={6}>
+                        <Job image={CiscoLogo}
+                             company="Cisco Systems"
+                             location="San Jose, CA"
+                             title="CDO Choice Intern"
+                             years="May 2010-August 2010" />
                     </Col>
                 </Row>
-                <h6 className="job-title">Software Engineer - September 2011 to September 2016</h6>
-                <ul className="job-roles">
-                    <li>Delivered platform-independent base operating system to platform teams</li>
-                    <li>Merged and synced quarterly drop of upstream patches to Linux and FOSS application</li>
-                    <li>Patched critical open source vulnerabilities immediately (e.g. Heartbleed)</li>
-                    <li>Implemented features such as system page and challenge-response mechanism</li>
-                </ul>
-                <h6 className="job-title">CDO Choice Intern - May 2010 to August 2010</h6>
-                <ul className="job-roles">
-                    <li>Wrote Perl scripts to perform common source code management tasks (e.g. counting lines of code in codebase, determining which ClearCase component contains a given file)</li>
-                </ul>
-            </div>
         </div>
-
         <div id="education">
             <h3>Education</h3>
             <Row>
@@ -43,12 +37,11 @@ const ExperienceSection = () => {
                     <Image className="heading-image" src={PSULogo} alt="Penn State Logo" fluid/>
                 </Col>
                 <Col xs={7}>
-                    <h5>Pennsylvania State University</h5>
+                    <h5 className="font-weight-bold">Pennsylvania State University</h5>
                     <h6>B.S. Computer Engineering, June 2011</h6>
                 </Col>
             </Row>
         </div>
-
         <div id="skills">
             <h3>Technical Skills</h3>
             <Row>
