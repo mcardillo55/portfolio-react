@@ -30,6 +30,7 @@ const ExperienceSection = () => {
                     </Col>
                 </Row>
         </div>
+        <hr />
         <div id="education">
             <h3>Education</h3>
             <Row>
@@ -42,11 +43,12 @@ const ExperienceSection = () => {
                 </Col>
             </Row>
         </div>
+        <hr />
         <div id="skills">
             <h3>Technical Skills</h3>
             <Row>
                 <Col sm={6}>
-                    <h6 className="my-3">Programming Languages</h6>
+                    <h6 className="my-3 font-weight-bold">Programming Languages</h6>
                     <ListGroup>
                         <ListGroup.Item>Python, JavaScript/Node.JS</ListGroup.Item>
                         <ListGroup.Item>C, C++</ListGroup.Item>
@@ -55,7 +57,7 @@ const ExperienceSection = () => {
                     </ListGroup>
                 </Col>
                 <Col sm={6}>
-                    <h6 className="my-3">Web Frameworks</h6>
+                    <h6 className="my-3 font-weight-bold">Web Frameworks</h6>
                     <ListGroup>
                         <ListGroup.Item>Flask</ListGroup.Item>
                         <ListGroup.Item>Django</ListGroup.Item>
@@ -66,7 +68,7 @@ const ExperienceSection = () => {
             </Row>
             <Row>
                 <Col sm={6}>
-                    <h6 className="my-3">Databases</h6>
+                    <h6 className="my-3 font-weight-bold">Databases</h6>
                     <ListGroup>
                         <ListGroup.Item>MongoDB</ListGroup.Item>
                         <ListGroup.Item>MySQL</ListGroup.Item>
@@ -74,7 +76,7 @@ const ExperienceSection = () => {
                     </ListGroup>
                 </Col>
                 <Col sm={6}>
-                    <h6 className="my-3">Operating Systems</h6>
+                    <h6 className="my-3 font-weight-bold">Operating Systems</h6>
                     <ListGroup>
                         <ListGroup.Item>GNU/Linux</ListGroup.Item>
                         <ListGroup.Item>Mac OS X</ListGroup.Item>
