@@ -33,11 +33,11 @@ const ExperienceSection = () => {
         <hr />
         <div id="education">
             <h3>Education</h3>
-            <Row>
+            <Row className="no-gutters">
                 <Col xs={2}>
                     <Image className="heading-image" src={PSULogo} alt="Penn State Logo" fluid/>
                 </Col>
-                <Col xs={7}>
+                <Col xs={7} className="pl-2">
                     <h5 className="font-weight-bold">Pennsylvania State University</h5>
                     <h6>B.S. Computer Engineering, June 2011</h6>
                 </Col>

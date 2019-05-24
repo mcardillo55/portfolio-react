@@ -6,11 +6,11 @@ import Image from 'react-bootstrap/Image';
 const Job = (props) => {
     return(
         <>
-            <Row>
+            <Row className="no-gutters">
                 <Col xs={2}>
-                    <Image className="heading-image" src={props.image} fluid/>
+                    <Image className="heading-image pt-2" src={props.image} fluid/>
                 </Col>
-                <Col xs={10}>
+                <Col xs={10} className="pl-2">
                     <h4>{props.company}</h4>
                     <h5>{props.location}</h5>
                 </Col>
