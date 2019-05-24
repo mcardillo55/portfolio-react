@@ -13,11 +13,13 @@ const CircleButtons = (props) => {
           <Col sm={{span: 7, offset:2}} md={{span:8, offset: 2}}>
             <Row id="circle-wrapper" className="text-center">
               <Col xs="12" md="3">
+                <Link className="circle-link" href="#" to="projects" spy={true} smooth={true} hashSpy={true} duration={500} onClick={props.onClick}>
                   <Circle circleText="Projects" faIcon="fa-cog" id="projects-btn"/>
                   <SmallNav faIcon="fa-cog" text="Projects"/>
                 </Link>
               </Col>
               <Col xs="12" md="3">
+                <Link className="circle-link" href="#" to="experience" spy={true} smooth={true} hashSpy={true} duration={500} onClick={props.onClick}>
                   <Circle circleText="Experience" faIcon="fa-briefcase" id="experience-btn"/>
                   <SmallNav faIcon="fa-briefcase" text="Experience"/>
                 </Link>
