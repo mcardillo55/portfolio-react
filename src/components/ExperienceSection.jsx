@@ -12,7 +12,7 @@ const ExperienceSection = () => {
     <div id="experience">
         <div id="professional">
             <h2>Professional</h2>
-                <Row>
+                <Row className="px-3">
                     <Col className="border rounded" xs={12} md={{span:5, offset: 1}}>
                         <Job image={CiscoLogo}
                              company="Cisco Systems"
@@ -34,7 +34,7 @@ const ExperienceSection = () => {
             <h2>Education</h2>
             <Row>
                 <Col xs={12} md={{span:10, offset: 1}}>
-                    <Row className="no-gutters border rounded">
+                    <Row className="no-gutters border rounded pl-2">
                         <Col xs={2}>
                             <Image className="heading-image" src={PSULogo} alt="Penn State Logo" fluid/>
                         </Col>
