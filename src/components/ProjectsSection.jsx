@@ -6,6 +6,7 @@ import CBPro from '../images/cbprotrader.png'
 import SCDJ from '../images/soundclouddj.png'
 import Unfriended from '../images/unfriended.png'
 import SSPL from '../images/sspl.png'
+import ImgSite from '../images/imgsite.png'
 
 const ProjectsSection = () => {
   return(
@@ -23,6 +24,17 @@ const ProjectsSection = () => {
                         years="2014" />
               </Col>
               <Col md={6} className="my-2 my-md-0">
+                <ProjectCard title="ImgSite" 
+                        source_link="https://github.com/mcardillo55/imagesite"
+                        demo_link="https://www.michaeljcardillo.com/imgsite"
+                        image={ImgSite}
+                        description="Clone of Imgur. Image hosting service with user accounts."
+                        stack={["Python", "Django", "Bootstrap"]}
+                        years="2014" />
+              </Col>
+            </Row>
+            <Row>
+              <Col md={6} className="my-2 my-md-0">
                 <ProjectCard title="unfriended" 
                         source_link="https://github.com/mcardillo55/unfriended-flask"
                         demo_link="https://www.michaeljcardillo.com/unfriended-flask/"
@@ -31,8 +43,6 @@ const ProjectsSection = () => {
                         stack={["Python", "Flask", "Bootstrap"]}
                         years="2014" />
               </Col>
-            </Row>
-            <Row>
               <Col md={6} className="my-2 my-md-0">
                 <ProjectCard title="cbpro-trader" 
                         source_link="https://github.com/mcardillo55/cbpro-trader"
@@ -46,6 +56,9 @@ const ProjectsSection = () => {
                                 "Determines whether to place free limit orders or instant market orders, based on market volatility, ",
                                 "Features curses interface to view real-time program data in console"]}/>
               </Col>
+
+            </Row>
+            <Row>
               <Col md={6} className="my-2 my-md-0">
                 <ProjectCard title="Student Space Programs Laboratory"
                         stack={["C", "GTK+"]}
