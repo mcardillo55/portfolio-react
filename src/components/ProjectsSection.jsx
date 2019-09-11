@@ -17,7 +17,7 @@ const ProjectsSection = () => {
               <Col md={6} className="my-2 my-md-0">
                 <ProjectCard title="soundcloud-dj" 
                         source_link="https://github.com/mcardillo55/soundcloud-dj"
-                        demo_link="https://www.shipfamradio.com/"
+                        demo_link="https://www.michaeljcardillo.com/scdj"
                         image={SCDJ}
                         description="Parses a Facebook group with Graph API to locate and store SoundCloud and YouTube URLs. Songs are then displayed in their respective player via an AngularJS Frontend"
                         stack={["Python", "Flask", "AngularJS", "SQLite", "SocketIO"]}
